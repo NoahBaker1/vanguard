@@ -5,7 +5,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-    --blue: #3b82f6; /* Adjusted to match your screenshot blue */
+    --blue: #3b82f6;
     --white: #ffffff;
     --black: #000000;
     --charcoal: #1f1f1f;
@@ -35,7 +35,7 @@ header {
     background-color: var(--black);
     padding: 1rem 0;
     position: relative;
-    border-bottom: 3px solid var(--blue); /* Blue line at bottom of header */
+    border-bottom: 3px solid var(--blue);
 }
 
 .header-content {
@@ -44,11 +44,12 @@ header {
     align-items: center;
 }
 
+/* SVG LOGO AREA */
 h1 {
     font-size: 1.5rem;
     color: var(--blue);
     font-weight: 700;
-    padding-left: 3rem; /* Space for Logo */
+    padding-left: 3rem;
     position: relative;
 }
 
@@ -79,7 +80,7 @@ h1::before {
 nav ul {
     display: none;
     position: absolute; top: 100%; left: 0; width: 100%;
-    background: var(--black); text-align: right;
+    background: var(--black); text-align: center;
     padding: 1rem; z-index: 100;
 }
 nav li { margin-bottom: 1rem; }
@@ -159,6 +160,7 @@ footer a { color: var(--blue); }
     .nav-toggle-label { display: none; }
     nav ul {
         display: flex; position: static; width: auto; background: transparent; gap: 2rem;
+        padding: 0; text-align: left;
     }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .results-layout { grid-template-columns: 1fr 1fr; align-items: flex-end; }
